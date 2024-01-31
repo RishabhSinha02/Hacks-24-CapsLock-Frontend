@@ -6,7 +6,7 @@ const Intermediatory = () => {
   const code = queryParameters.get("code");
   console.log(code);
   if (code) {
-    axios.post("https://hacks-backend.onrender.com/get-youtube-auth-code", {
+    axios.post("http://localhost:4000/get-youtube-auth-code", {
       code,
     });
   }
